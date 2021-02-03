@@ -6,7 +6,7 @@ public interface IFile {
      param e : reference of element to add
      throws RuntimeException exception if queue is full
      */
-    public void add(double e);
+    public boolean add(double e);
 
     /*
      remove head queue element if queue isn't empty
