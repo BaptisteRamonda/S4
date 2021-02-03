@@ -13,9 +13,10 @@ public class FileArrayList implements IFile {
     Methods
      */
 
-    public void add(double e) {
+    public boolean add(double e) {
         assert (!this.data.contains(e)): "Warning, element e is already present in queue";
         this.data.add(e);
+        return true;
     }
 
     public boolean remove() {
